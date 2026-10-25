@@ -101,6 +101,14 @@ do
   -- instead raise a dialog asking if you wish to save the current file(s)
   -- See `:help 'confirm'`
   vim.o.confirm = true
+
+  -- Reduce the tab size to just 2 chars
+  vim.opt.tabstop = 2       -- how wide a tab character is displayed
+  vim.opt.shiftwidth = 2    -- indent width for >>, <<, and auto-indent
+  vim.opt.softtabstop = 2   -- how many spaces Tab/Backspace inserts/removes in insert mode
+  vim.opt.expandtab = true  -- insert spaces instead of tab characters
+
+
 end
 
 -- ============================================================
